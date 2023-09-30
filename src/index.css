@@ -4,11 +4,22 @@
   font-weight: 400;
 
   color-scheme: light dark;
+<<<<<<< HEAD
   color: rgba(202, 198, 198, 0.87);
   background-color: #242424;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+=======
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+>>>>>>> 1118ea1c546ee324a6c42f2a3fbc54e8de78bc98
 }
 
 a {
