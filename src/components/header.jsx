@@ -3,17 +3,21 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <h1>My Project</h1>
+      <h1>My video Search </h1>
+      <hr />
       <nav>
         <ul>
           <li>
-            <a href="#someID1">Some link title 1</a>
+            <a href="#someID1">Home</a>
           </li>
           <li>
-            <a href="#someID2">Some link title 2</a>
+            <a href="#someID2">Videos</a>
           </li>
           <li>
-            <a href="#someID3">Some link title 3</a>
+            <a href="#someID3">TV-Shows</a>
+          </li>
+          <li>
+            <a href="#someID4">New Upload</a>
           </li>
         </ul>
       </nav>
