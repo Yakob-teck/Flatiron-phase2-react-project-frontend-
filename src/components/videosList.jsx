@@ -24,6 +24,12 @@ function VideosList() {
 
   return (
     <div>
+      <input
+        type="text"
+        placeholder="Search by title..."
+        value={searchInput}
+        onChange={(e) => setSearchInput(e.target.value)}
+      />
       <table>
         <thead>
           <tr>
