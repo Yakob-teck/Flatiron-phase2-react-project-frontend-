@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import VideoTableRow from "./VideoTableRow";
 function VideosList() {
   const [videosList, setVideosList] = useState([]);
 
@@ -19,22 +19,7 @@ function VideosList() {
   }, []);
 
   const renderVideo = videosList.map((video) => (
-    <tr key={video.id}>
-      <td>{video.title}</td>
-      <td>{video.url}</td>
-      <td>
-        <img
-          style={{ width: "50px", height: "auto" }}
-          src={video.thumbnail}
-          alt={video.title}
-        />
-      </td>
-      <td>{video.duration}</td>
-      <td>{video.views}</td>
-      <td>{video.likes}</td>
-      <td>{video.dislikes}</td>
-      <td>{video.description}</td>
-    </tr>
+    <VideoTableRow video={video} key={video.id} />
   ));
 
   return (
