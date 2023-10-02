@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import VideoTableRow from "./VideoTableRow";
+
 function VideosList() {
   const [videosList, setVideosList] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -18,7 +20,16 @@ function VideosList() {
     fetchVideos();
   }, []);
 
-  const renderVideo = videosList.map((video) => (
+  const filteredVideos = videosList.filter((video) => {
+    const lowerCasedTitle = video.title.toLowerCase();
+    return lowerCasedTitle.includes(searchInput.toLowerCase());
+  });
+
+  const handleSearchChange = (event) => {
+    setSearchInput(event.target.value);
+  };
+
+  const renderVideo = filteredVideos.map((video) => (
     <VideoTableRow video={video} key={video.id} />
   ));
 
@@ -28,7 +39,7 @@ function VideosList() {
         type="text"
         placeholder="Search by title..."
         value={searchInput}
-        onChange={(e) => setSearchInput(e.target.value)}
+        onChange={handleSearchChange}
       />
       <table>
         <thead>
