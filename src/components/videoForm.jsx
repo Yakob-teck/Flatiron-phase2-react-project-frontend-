@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const VideoForm = ({ addVideo }) => {
-  const initialFormData = {
+  const videoFormData = {
     title: "",
     url: "",
     thumbnail: "",
@@ -22,7 +22,7 @@ const VideoForm = ({ addVideo }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        setFormData(initialFormData);
+        setFormData(videoFormData);
         addVideo(data);
       })
       .catch((error) => {
