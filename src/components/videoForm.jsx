@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-
+import "./videoForm.css";
 const VideoForm = ({ addVideo }) => {
-  const videoFormData = {
+  const [formData, setFormData] = useState({
     title: "",
     url: "",
     thumbnail: "",
@@ -10,7 +10,16 @@ const VideoForm = ({ addVideo }) => {
     likes: 0,
     dislikes: 0,
     description: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch("http://localhost:3000/videos", {
@@ -22,7 +31,16 @@ const VideoForm = ({ addVideo }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        setFormData(videoFormData);
+        setFormData({
+          title: "",
+          url: "",
+          thumbnail: "",
+          duration: "",
+          views: 0,
+          likes: 0,
+          dislikes: 0,
+          description: "",
+        });
         addVideo(data);
       })
       .catch((error) => {
