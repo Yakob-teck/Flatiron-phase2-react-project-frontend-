@@ -46,22 +46,25 @@ function VideosList() {
 
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Search by title..."
-        value={searchInput}
-        onChange={handleSearchChange}
-      />
+      <div className="top-container">
+        <VideoForm addVideo={addVideo} />
+        <input
+          type="text"
+          placeholder="Search by title..."
+          value={searchInput}
+          onChange={handleSearchChange}
+        />
+      </div>
+
       {currentVideo && (
         <div>
           <video controls autoPlay>
             <source src={currentVideo} type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
           <button onClick={() => setCurrentVideo(null)}>Close Video</button>
         </div>
       )}
-      <VideoForm addVideo={addVideo} />
+
       <table>
         <thead>
           <tr>
