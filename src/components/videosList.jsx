@@ -4,6 +4,7 @@ import VideoTableRow from "./VideoTableRow";
 function VideosList() {
   const [videosList, setVideosList] = useState([]);
   const [searchInput, setSearchInput] = useState("");
+  const [currentVideo, setCurrentVideo] = useState(null);
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -20,17 +21,21 @@ function VideosList() {
     fetchVideos();
   }, []);
 
+  const handleSearchChange = (event) => {
+    setSearchInput(event.target.value);
+  };
+
+  const playVideo = (videoUrl) => {
+    setCurrentVideo(videoUrl);
+  };
+
   const filteredVideos = videosList.filter((video) => {
     const lowerCasedTitle = video.title.toLowerCase();
     return lowerCasedTitle.includes(searchInput.toLowerCase());
   });
 
-  const handleSearchChange = (event) => {
-    setSearchInput(event.target.value);
-  };
-
   const renderVideo = filteredVideos.map((video) => (
-    <VideoTableRow video={video} key={video.id} />
+    <VideoTableRow video={video} key={video.id} playVideo={playVideo} />
   ));
 
   return (
@@ -41,6 +46,15 @@ function VideosList() {
         value={searchInput}
         onChange={handleSearchChange}
       />
+      {currentVideo && (
+        <div>
+          <video controls autoPlay>
+            <source src={currentVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <button onClick={() => setCurrentVideo(null)}>Close Video</button>
+        </div>
+      )}
       <table>
         <thead>
           <tr>
