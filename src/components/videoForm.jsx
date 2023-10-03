@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./videoForm.css";
+
 const VideoForm = ({ addVideo }) => {
   const [formData, setFormData] = useState({
     title: "",
@@ -50,7 +51,7 @@ const VideoForm = ({ addVideo }) => {
 
   return (
     <div>
-      <h2>Add New Video</h2>
+      <h2>Bring Your Video Here</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Title:</label>
