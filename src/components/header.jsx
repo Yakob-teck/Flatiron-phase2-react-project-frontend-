@@ -52,8 +52,8 @@ const Header = () => {
             </a>
           </li>
           <li style={liStyles}>
-            <a href="#someID4" style={linkStyles}>
-              New Upload
+            <a href="col-md-6" style={linkStyles}>
+              Contact Us
             </a>
           </li>
         </ul>

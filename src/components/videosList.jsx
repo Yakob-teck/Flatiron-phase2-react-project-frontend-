@@ -40,10 +40,6 @@ function VideosList() {
     return lowerCasedTitle.includes(searchInput.toLowerCase());
   });
 
-  const renderVideo = filteredVideos.map((video) => (
-    <VideoTableRow video={video} key={video.id} playVideo={playVideo} />
-  ));
-
   return (
     <div>
       <div className="top-container">
@@ -55,7 +51,9 @@ function VideosList() {
           onChange={handleSearchChange}
         />
       </div>
-
+      <p>
+        <h3>To Play Video Click On Url </h3>{" "}
+      </p>
       {currentVideo && (
         <div>
           <video controls autoPlay>
@@ -78,7 +76,11 @@ function VideosList() {
             <th>Description</th>
           </tr>
         </thead>
-        <tbody>{renderVideo}</tbody>
+        <tbody>
+          {filteredVideos.map((video) => (
+            <VideoTableRow video={video} key={video.id} playVideo={playVideo} />
+          ))}
+        </tbody>
       </table>
     </div>
   );

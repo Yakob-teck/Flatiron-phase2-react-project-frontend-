@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   const containerStyles = {
-    backgroundColor: "black",
+    backgroundColor: "#2768a2",
   };
 
   return (
