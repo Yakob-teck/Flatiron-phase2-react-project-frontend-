@@ -46,6 +46,7 @@ function VideosList() {
         value={searchInput}
         onChange={handleSearchChange}
       />
+
       {currentVideo && (
         <div>
           <video controls autoPlay>
