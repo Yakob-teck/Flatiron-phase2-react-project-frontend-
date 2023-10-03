@@ -1,9 +1,21 @@
 import React from "react";
 
 const Footer = () => {
+  const footerStyles = {
+    backgroundColor: "#2768a2",
+    color: "rgb(225, 217, 239)",
+    width: "auto",
+    textAlign: "center",
+    padding: "20px",
+  };
+
+  const containerStyles = {
+    backgroundColor: "black",
+  };
+
   return (
-    <footer>
-      <div className="container">
+    <footer style={footerStyles}>
+      <div className="container" style={containerStyles}>
         <div className="row">
           <div className="col-md-6">
             <h3>About Us</h3>
