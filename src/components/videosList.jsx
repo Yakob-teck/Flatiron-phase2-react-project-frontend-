@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import VideoTableRow from "./VideoTableRow";
+import "./VideoList.css";
 
 function VideosList() {
   const [videosList, setVideosList] = useState([]);

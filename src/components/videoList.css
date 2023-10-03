@@ -1,0 +1,26 @@
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+video {
+  max-width: 100%;
+}
