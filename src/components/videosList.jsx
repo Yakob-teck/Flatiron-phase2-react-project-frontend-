@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import VideoTableRow from "./VideoTableRow";
-import VideoForm from "./videoForm";
+import VideoForm from "./components/VideoForm";
 import "./VideoList.css";
 
 function VideosList() {
@@ -22,6 +22,10 @@ function VideosList() {
 
     fetchVideos();
   }, []);
+
+  const addVideo = (newVideo) => {
+    setVideosList([...videosList, newVideo]);
+  };
 
   const handleSearchChange = (event) => {
     setSearchInput(event.target.value);
@@ -48,7 +52,6 @@ function VideosList() {
         value={searchInput}
         onChange={handleSearchChange}
       />
-
       {currentVideo && (
         <div>
           <video controls autoPlay>
@@ -58,6 +61,7 @@ function VideosList() {
           <button onClick={() => setCurrentVideo(null)}>Close Video</button>
         </div>
       )}
+      <VideoForm addVideo={addVideo} />
       <table>
         <thead>
           <tr>
