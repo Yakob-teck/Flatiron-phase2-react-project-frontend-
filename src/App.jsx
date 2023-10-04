@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import Header from "./components/header";
-
+import React from "react";
 import Footer from "./components/footer";
 import Main from "./components/Main";
 import VideosList from "./components/videosList.jsx";
+import NavBar from "./components/navBar";
 const App = () => {
   return (
     <div>
-      <Header />
+      <NavBar />
       <Main />
       <VideosList />
       <Footer />

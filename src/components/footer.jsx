@@ -17,11 +17,11 @@ const Footer = () => {
     <footer style={footerStyles}>
       <div className="container" style={containerStyles}>
         <div className="row">
-          <div className="col-md-6">
+          <div className="#about">
             <h3>About Us</h3>
             <hr />
           </div>
-          <div className="col-md-6">
+          <div className="">
             <h3>Contact Us</h3>
             <p>Email: Abby@moviesearchapp.com</p>
             <p>Social media:</p>

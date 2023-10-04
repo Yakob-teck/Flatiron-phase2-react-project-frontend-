@@ -21,16 +21,16 @@ const NavBar = () => {
     gap: "20px",
     justifyContent: "center",
   };
-
   const liStyles = {
     margin: "0 10px",
     textAlign: "center",
   };
-
   const linkStyles = {
     textDecoration: "none",
     color: "#646cff",
-    fontWeight: "500",
+    fontWeight: "800",
+    fontSize: "24px",
+    gap: "2rem",
     transition: "color 0.3s ease-in-out",
   };
 
@@ -41,19 +41,19 @@ const NavBar = () => {
       <nav style={navStyles}>
         <ul style={ulStyles}>
           <li style={liStyles}>
-            <a href="#someID1" style={linkStyles}>
+            <a href="#Home" style={linkStyles}>
               Home
             </a>
           </li>
           <li style={liStyles}>
-            <a href="#someID2" style={linkStyles}>
+            <a href="#Videos" style={linkStyles}>
               Videos
             </a>
           </li>
 
           <li style={liStyles}>
-            <a href="#" style={linkStyles}>
-              Contact Us
+            <a href="#About" style={linkStyles}>
+              About Us
             </a>
           </li>
         </ul>
