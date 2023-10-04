@@ -24,3 +24,9 @@ table td {
 video {
   max-width: 100%;
 }
+.top-container {
+  box-sizing: content-box;
+  border: #8f0505;
+  color: rgb(6, 6, 6);
+  border-style: none;
+}
