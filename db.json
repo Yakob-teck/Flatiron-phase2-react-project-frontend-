@@ -1,65 +1,98 @@
-<<<<<<< HEAD
 {
-  "Videos": [
+  "videos": [
     {
       "id": 1,
-      "exampleAttributeString": "This is just an example. Please supply your own data.",
-      "exampleImgString": "https://placehold.co/150x150.jpg",
-      "exampleAttributesArray": ["Replace", "this", "data"],
-      "exampleAttributeNumber": 2341,
-      "exampleAttributeObj": {
-        "objectKey": "objectValue"
-=======
-[
-  {
-    "id": "1",
-    "title": "PREMIER LEAGUE HIGHLIGHTS ",
-    "description": "Manchester United vs. Crystal Palace",
-    "url": "https://www.youtube.com/watch?v=lZQp4iu50xs.mp4",
-    "thumbnail": "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/08/thumbs_b_c_ce796e74fba47359bf4dc316ab5e3f6f.jpg",
-    "duration": "00:05:22",
-    "views": 58271,
-    "likes": 750,
-    "dislikes": 20,
-    "comments": [
-      {
-        "id": "comment1",
-        "user": "@moreblack",
-        "text": "Gotta respect the bounce back after losing to the same team just a few days earlier.",
-        "timestamp": "2023-09-30T12:00:00Z"
->>>>>>> 25afd9c533177963debc8d66ac1718998b97eedf
-      },
-      {
-        "id": "comment2",
-        "user": "User2",
-        "text": "I learned a lot from this video.",
-        "timestamp": "2023-09-30T13:30:00Z"
-      }
-    ]
-  },
-  {
-    "id": "2",
-    "title": "Video Title 2",
-    "description": "This is the second video description.",
-    "url": "https://example.com/video2.mp4",
-    "thumbnail": "https://example.com/thumbnail2.jpg",
-    "duration": "00:08:45",
-    "views": 8500,
-    "likes": 600,
-    "dislikes": 30,
-    "comments": [
-      {
-        "id": "comment3",
-        "user": "User3",
-        "text": "Amazing content!",
-        "timestamp": "2023-09-30T14:45:00Z"
-      },
-      {
-        "id": "comment4",
-        "user": "User4",
-        "text": "I've watched this video multiple times.",
-        "timestamp": "2023-09-30T16:00:00Z"
-      }
-    ]
-  }
-]
+      "title": "Mountain view",
+      "description": "Rocky mountain",
+      "url": "pexels-nicolas-becker-5769269 (1080p).mp4",
+      "thumbnail": "",
+      "duration": "00:05:30",
+      "views": 1500,
+      "likes": 120,
+      "uploader": "User123",
+      "uploadDate": "2023-10-01"
+    },
+    {
+      "id": 2,
+      "title": "kangaroo",
+      "description": "This is the second sample video",
+      "url": "181314 (1080p) (1).mp4",
+      "thumbnail": "https://example.com/thumbnails/sample2.jpg",
+      "duration": "00:10:45",
+      "views": 2500,
+      "likes": 180,
+      "uploader": "User456",
+      "uploadDate": "2023-10-02"
+    },
+    {
+      "id": 3,
+      "title": "Cloudy",
+      "description": "This is the first sample video",
+      "url": "https://vimeo.com/groups/freehd/videos/230521790",
+      "thumbnail": "https://images.unsplash.com/photo-1431057259500-78dd318a0a75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2736&q=80",
+      "duration": "00:05:30",
+      "views": 1500,
+      "likes": 120,
+      "uploader": "User123",
+      "uploadDate": "2023-10-01"
+    },
+    {
+      "id": 4,
+      "title": "Nature",
+      "description": "This is the second sample video",
+      "url": "https://vimeo.com/33031367",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg",
+      "duration": "00:10:45",
+      "views": 2200,
+      "likes": 180,
+      "uploader": "User456",
+      "uploadDate": "2023-10-02"
+    },
+    {
+      "id": 5,
+      "title": "Sample Video 2",
+      "description": "This is the second sample video",
+      "url": "https://example.com/videos/sample2.mp4",
+      "thumbnail": "https://example.com/thumbnails/sample2.jpg",
+      "duration": "00:10:45",
+      "views": 2200,
+      "likes": 180,
+      "uploader": "User456",
+      "uploadDate": "2023-10-02"
+    },
+    {
+      "id": 6,
+      "title": "Tutorial",
+      "description": "This is the second sample video",
+      "url": "https://youtu.be/b9eMGE7QtTk",
+      "thumbnail": "https://example.com/thumbnails/sample2.jpg",
+      "duration": "00:10:45",
+      "views": 2200,
+      "likes": 180,
+      "uploader": "User456",
+      "uploadDate": "2023-10-02"
+    },
+    {
+      "title": "Tutorial2",
+      "url": "https://www.youtube.com/watch?v=b9eMGE7QtTk&t=126s&ab_channel=JavaScriptMastery",
+      "thumbnail": "",
+      "duration": "",
+      "views": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "description": "",
+      "id": 7
+    },
+    {
+      "title": "Learn JSON - Full Crash Course for Beginners",
+      "url": "https://www.youtube.com/watch?v=GpOO5iKzOmY&ab_channel=freeCodeCamp.org",
+      "thumbnail": "",
+      "duration": "",
+      "views": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "description": "",
+      "id": 8
+    }
+  ]
+}
