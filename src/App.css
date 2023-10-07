@@ -4,3 +4,32 @@
   padding: 2rem;
   text-align: center;
 }
+nav {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+
+  background-color: #2d2b2b;
+  color: #2cbb49;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  gap: 10rem;
+}
+
+nav li {
+  position: relative;
+  display: contents;
+  margin-right: 10px;
+  gap: 10px;
+  padding: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e22c2c;
+  font-weight: 400;
+}
