@@ -45,7 +45,6 @@ function VideosList() {
       <div>
         <h1>Welcome to the Videos Page</h1>
       </div>
-
       <div className="top-container">
         <VideoForm addVideo={addVideo} />
         <p>Filiter Video from List</p>
@@ -56,9 +55,7 @@ function VideosList() {
           onChange={handleSearchChange}
         />
       </div>
-      <p>
-        <h3>To Play Video Click On Url </h3>{" "}
-      </p>
+      <h3>To Play Video Click On Url </h3>{" "}
       {currentVideo && (
         <div>
           <video controls autoPlay>
@@ -67,7 +64,6 @@ function VideosList() {
           <button onClick={() => setCurrentVideo(null)}>Close Video</button>
         </div>
       )}
-
       <table>
         <thead>
           <tr>
