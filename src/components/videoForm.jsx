@@ -73,6 +73,16 @@ const VideoForm = ({ addVideo }) => {
             required
           />
         </div>
+        <div>
+          <label>Duration:</label>
+          <input
+            type="text"
+            name="duration"
+            value={formData.duration}
+            onChange={handleChange}
+            required
+          />
+        </div>
 
         <button type="submit">Add Video</button>
       </form>
