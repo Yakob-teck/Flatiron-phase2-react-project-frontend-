@@ -38,26 +38,6 @@ const NavBar = () => {
     <header style={headerStyles}>
       <h1>My Video Search</h1>
       <hr />
-      <nav style={navStyles}>
-        <ul style={ulStyles}>
-          <li style={liStyles}>
-            <a href="#Home" style={linkStyles}>
-              Home
-            </a>
-          </li>
-          <li style={liStyles}>
-            <a href="#Videos" style={linkStyles}>
-              Videos
-            </a>
-          </li>
-
-          <li style={liStyles}>
-            <a href="#About" style={linkStyles}>
-              About Us
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };
