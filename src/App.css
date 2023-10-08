@@ -22,9 +22,8 @@ nav ul {
 
 nav li {
   position: relative;
-  display: contents;
+  display: inline-flex;
   margin-right: 10px;
-  gap: 10px;
   padding: auto;
 }
 
