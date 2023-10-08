@@ -42,12 +42,9 @@ function VideosList() {
 
   return (
     <div>
-      <div>
-        <h1>Welcome to the Videos Page</h1>
-      </div>
       <div className="top-container">
         <VideoForm addVideo={addVideo} />
-        <p>Filiter Video from List</p>
+        <h3>Filiter Video from List</h3>
         <input
           type="text"
           placeholder="Search by title..."

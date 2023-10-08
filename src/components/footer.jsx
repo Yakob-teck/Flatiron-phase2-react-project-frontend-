@@ -12,6 +12,10 @@ const Footer = () => {
   const containerStyles = {
     backgroundColor: "#2768a2",
   };
+  const socialMediaStyle = {
+    display: "flex",
+    gap: "10px",
+  };
 
   return (
     <footer style={footerStyles}>
@@ -25,8 +29,16 @@ const Footer = () => {
             <h3>Contact Us</h3>
             <p>Email: Abby@moviesearchapp.com</p>
             <p>Social media:</p>
-            <p>Map</p>
-            <p>Address: 68 MacEwan Street, Calgary, AB, Canada</p>
+            <div stayle={socialMediaStyle}>
+              <a href="https://www.facebook.com">
+                <img src="facebook-icon.png" alt="Facebook" />
+              </a>
+              <a href="https://twitter.com">
+                <img src="twitter-icon.png" alt="Twitter" />
+              </a>
+              <p>Map</p>
+              <p>Address: 68 MacEwan Street, Calgary, AB, Canada</p>
+            </div>
           </div>
         </div>
       </div>

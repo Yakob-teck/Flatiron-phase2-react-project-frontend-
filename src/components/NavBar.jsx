@@ -36,7 +36,7 @@ const NavBar = () => {
 
   return (
     <header style={headerStyles}>
-      <h1>My Video Search</h1>
+      <h1>My Video Streaming</h1>
       <hr />
     </header>
   );
